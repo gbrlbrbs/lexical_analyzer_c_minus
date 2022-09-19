@@ -64,5 +64,9 @@ TokenType getToken(void) {
     }
     current_token = yylex();
     strncpy(token_string, yytext, MAXTOKENLEN);
-    
+    if (trace_scan) {
+        fprintf(listing, "\t%d:", lineno);
+        printToken(current_token, token_string);
+    }
+    return current_token;
 }
