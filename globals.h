@@ -28,5 +28,10 @@ typedef enum {
 } TokenType;
 
 extern int lineno;
+extern FILE* source;
+extern FILE* listing;
+extern FILE* code;
+
+
 
 #endif

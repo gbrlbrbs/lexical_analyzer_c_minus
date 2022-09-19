@@ -1,6 +1,8 @@
 
 %{
 #include "globals.h"
+#include "scan.h"
+char token_string[MAXTOKENLEN+1];
 %}
 
 digit       [0-9]
@@ -50,3 +52,17 @@ whitespace  [ \t]+
 }
 . {return ERROR;}
 %%
+
+TokenType getToken(void) {
+    static int first_time = TRUE;
+    TokenType current_token;
+    if (first_time) {
+        first_time = FALSE;
+        lineno++;
+        yyin = source;
+        yyout = listing;
+    }
+    current_token = yylex();
+    strncpy(token_string, yytext, MAXTOKENLEN);
+    
+}
