@@ -53,7 +53,7 @@ whitespace  [ \t]+
 . {return ERROR;}
 %%
 
-TokenType getToken(void) {
+TokenType get_token(void) {
     static int first_time = TRUE;
     TokenType current_token;
     if (first_time) {
@@ -66,7 +66,7 @@ TokenType getToken(void) {
     strncpy(token_string, yytext, MAXTOKENLEN);
     if (trace_scan) {
         fprintf(listing, "\t%d:", lineno);
-        printToken(current_token, token_string);
+        print_token(current_token, token_string);
     }
     return current_token;
 }
