@@ -14,23 +14,27 @@
 #define TRUE 1
 #endif
 
-#define MAXRESERVED 8
+#define MAXRESERVED 8 /* the number of reserved words*/
 
 typedef enum {
+    /*book-keeping tokens*/
     ENDFILE, ERROR,
+    /* reserved words*/
     IF, ELSE, WHILE, RETURN,
+    /* accepted types*/
     INT, VOID,
+    /*multicnharacter tokens*/
     IDENTIFIER, NUMBER,
-    ASSIGN, 
-    EQUALS, LOWER, LARGER, LOWER_EQ, LARGER_EQ, NOT_EQ,
-    PLUS, MINUS, TIMES, DIV,
-    SEMICOL, COLON, RPAR, LPAR, RBRACK, LBRACK, RCOMM, LCOMM
+    /*special symbols*/
+    ASSIGN,  EQUALS, LOWER, LARGER, LOWER_EQ, LARGER_EQ, NOT_EQ, PLUS, MINUS, 
+    TIMES, DIV, SEMICOL, COLON, RPAR, LPAR, RBRACK, LBRACK, RCOMM, LCOMM
 } TokenType;
 
-extern int lineno;
-extern FILE* source;
-extern FILE* listing;
-extern FILE* code;
+extern int lineno;      /* source line number for listing */
+
+extern FILE* source;    /* source code text file */
+extern FILE* listing;   /* listing output text file */
+extern FILE* code;      /* code text file for TM simulator */
 
 typedef enum {
     Stmnt, Exp
