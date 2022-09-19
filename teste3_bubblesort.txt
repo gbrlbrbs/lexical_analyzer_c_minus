@@ -1,0 +1,212 @@
+
+C- COMPILATION: teste3_bubblesort.cminus
+	3:reserved word: void
+	3:IDENTIFIER, val = swap
+	3:(
+	3:reserved word: int
+	3:*
+	3:IDENTIFIER, val = xp
+	3:,
+	3:reserved word: int
+	3:*
+	3:IDENTIFIER, val = yp
+	3:)
+	4:{
+	5:reserved word: int
+	5:IDENTIFIER, val = temp
+	5:=
+	5:*
+	5:IDENTIFIER, val = xp
+	5:;
+	6:*
+	6:IDENTIFIER, val = xp
+	6:=
+	6:*
+	6:IDENTIFIER, val = yp
+	6:;
+	7:*
+	7:IDENTIFIER, val = yp
+	7:=
+	7:IDENTIFIER, val = temp
+	7:;
+	8:}
+	11:reserved word: void
+	11:IDENTIFIER, val = bubbleSort
+	11:(
+	11:reserved word: int
+	11:IDENTIFIER, val = arr
+	11:[
+	11:]
+	11:,
+	11:reserved word: int
+	11:IDENTIFIER, val = n
+	11:)
+	12:{
+	13:reserved word: int
+	13:IDENTIFIER, val = i
+	13:,
+	13:IDENTIFIER, val = j
+	13:;
+	14:IDENTIFIER, val = for
+	14:(
+	14:IDENTIFIER, val = i
+	14:=
+	14:NUMBER, val=0
+	14:;
+	14:IDENTIFIER, val = i
+	14:<
+	14:IDENTIFIER, val = n
+	14:-
+	14:NUMBER, val=1
+	14:;
+	14:IDENTIFIER, val = i
+	14:+
+	14:+
+	14:)
+	17:IDENTIFIER, val = for
+	17:(
+	17:IDENTIFIER, val = j
+	17:=
+	17:NUMBER, val=0
+	17:;
+	17:IDENTIFIER, val = j
+	17:<
+	17:IDENTIFIER, val = n
+	17:-
+	17:IDENTIFIER, val = i
+	17:-
+	17:NUMBER, val=1
+	17:;
+	17:IDENTIFIER, val = j
+	17:+
+	17:+
+	17:)
+	18:reserved word: if
+	18:(
+	18:IDENTIFIER, val = arr
+	18:[
+	18:IDENTIFIER, val = j
+	18:]
+	18:>
+	18:IDENTIFIER, val = arr
+	18:[
+	18:IDENTIFIER, val = j
+	18:+
+	18:NUMBER, val=1
+	18:]
+	18:)
+	19:IDENTIFIER, val = swap
+	19:(
+	19:IDENTIFIER, val = arr
+	19:[
+	19:IDENTIFIER, val = j
+	19:]
+	19:,
+	19:IDENTIFIER, val = arr
+	19:[
+	19:IDENTIFIER, val = j
+	19:+
+	19:NUMBER, val=1
+	19:]
+	19:)
+	19:;
+	20:}
+	23:reserved word: void
+	23:IDENTIFIER, val = printArray
+	23:(
+	23:reserved word: int
+	23:IDENTIFIER, val = arr
+	23:[
+	23:]
+	23:,
+	23:reserved word: int
+	23:IDENTIFIER, val = size
+	23:)
+	24:{
+	25:reserved word: int
+	25:IDENTIFIER, val = i
+	25:;
+	26:IDENTIFIER, val = for
+	26:(
+	26:IDENTIFIER, val = i
+	26:=
+	26:NUMBER, val=0
+	26:;
+	26:IDENTIFIER, val = i
+	26:<
+	26:IDENTIFIER, val = size
+	26:;
+	26:IDENTIFIER, val = i
+	26:+
+	26:+
+	26:)
+	27:IDENTIFIER, val = printf
+	27:(
+	27:IDENTIFIER, val = arr
+	27:[
+	27:IDENTIFIER, val = i
+	27:]
+	27:)
+	27:;
+	28:}
+	31:reserved word: int
+	31:IDENTIFIER, val = main
+	31:(
+	31:)
+	32:{
+	33:reserved word: int
+	33:IDENTIFIER, val = arr
+	33:[
+	33:]
+	33:=
+	33:{
+	33:NUMBER, val=64
+	33:,
+	33:NUMBER, val=34
+	33:,
+	33:NUMBER, val=25
+	33:,
+	33:NUMBER, val=12
+	33:,
+	33:NUMBER, val=22
+	33:,
+	33:NUMBER, val=11
+	33:,
+	33:NUMBER, val=90
+	33:}
+	33:;
+	34:reserved word: int
+	34:IDENTIFIER, val = n
+	34:=
+	34:IDENTIFIER, val = sizeof
+	34:(
+	34:IDENTIFIER, val = arr
+	34:)
+	34:/
+	34:IDENTIFIER, val = sizeof
+	34:(
+	34:IDENTIFIER, val = arr
+	34:[
+	34:NUMBER, val=0
+	34:]
+	34:)
+	34:;
+	35:IDENTIFIER, val = bubbleSort
+	35:(
+	35:IDENTIFIER, val = arr
+	35:,
+	35:IDENTIFIER, val = n
+	35:)
+	35:;
+	36:IDENTIFIER, val = printArray
+	36:(
+	36:IDENTIFIER, val = arr
+	36:,
+	36:IDENTIFIER, val = n
+	36:)
+	36:;
+	37:reserved word: return
+	37:NUMBER, val=0
+	37:;
+	38:}
+	38:EOF

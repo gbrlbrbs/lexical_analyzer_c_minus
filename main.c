@@ -56,7 +56,7 @@ int main( int argc, char * argv[] )
   listing = stdout; /* send listing to screen */
   fprintf(listing,"\nC- COMPILATION: %s\n",pgm);
 #if NO_PARSE
-  while (getToken()!=ENDFILE);
+  while (get_token()!=ENDFILE);
 #else
   syntaxTree = parse();
   if (TraceParse) {

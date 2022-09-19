@@ -1,0 +1,242 @@
+
+C- COMPILATION: teste2.cminus
+	2:reserved word: int
+	2:IDENTIFIER, val = x
+	2:[
+	2:NUMBER, val=10
+	2:]
+	2:;
+	3:reserved word: int
+	3:IDENTIFIER, val = minloc
+	3:(
+	3:reserved word: int
+	3:IDENTIFIER, val = a
+	3:[
+	3:]
+	3:,
+	3:reserved word: int
+	3:IDENTIFIER, val = low
+	3:,
+	3:reserved word: int
+	3:IDENTIFIER, val = high
+	3:)
+	4:{
+	5:reserved word: int
+	5:IDENTIFIER, val = i
+	5:;
+	6:reserved word: int
+	6:IDENTIFIER, val = x
+	6:;
+	7:reserved word: int
+	7:IDENTIFIER, val = k
+	7:;
+	8:IDENTIFIER, val = k
+	8:=
+	8:IDENTIFIER, val = low
+	8:;
+	9:IDENTIFIER, val = x
+	9:=
+	9:IDENTIFIER, val = a
+	9:[
+	9:IDENTIFIER, val = low
+	9:]
+	9:;
+	10:IDENTIFIER, val = i
+	10:=
+	10:IDENTIFIER, val = low
+	10:+
+	10:NUMBER, val=1
+	10:;
+	11:reserved word: while
+	11:(
+	11:IDENTIFIER, val = i
+	11:<
+	11:IDENTIFIER, val = high
+	11:)
+	12:{
+	13:reserved word: if
+	13:(
+	13:IDENTIFIER, val = a
+	13:[
+	13:IDENTIFIER, val = i
+	13:]
+	13:<
+	13:IDENTIFIER, val = x
+	13:)
+	14:{
+	15:IDENTIFIER, val = x
+	15:=
+	15:IDENTIFIER, val = a
+	15:[
+	15:IDENTIFIER, val = i
+	15:]
+	15:;
+	16:IDENTIFIER, val = k
+	16:=
+	16:IDENTIFIER, val = i
+	16:;
+	17:}
+	18:IDENTIFIER, val = i
+	18:=
+	18:IDENTIFIER, val = i
+	18:+
+	18:NUMBER, val=1
+	18:;
+	19:}
+	20:reserved word: return
+	20:IDENTIFIER, val = k
+	20:;
+	21:}
+	23:reserved word: void
+	23:IDENTIFIER, val = sort
+	23:(
+	23:reserved word: int
+	23:IDENTIFIER, val = a
+	23:[
+	23:]
+	23:,
+	23:reserved word: int
+	23:IDENTIFIER, val = low
+	23:,
+	23:reserved word: int
+	23:IDENTIFIER, val = high
+	23:)
+	24:{
+	25:reserved word: int
+	25:IDENTIFIER, val = i
+	25:;
+	26:reserved word: int
+	26:IDENTIFIER, val = k
+	26:;
+	27:IDENTIFIER, val = i
+	27:=
+	27:IDENTIFIER, val = low
+	27:;
+	28:reserved word: while
+	28:(
+	28:IDENTIFIER, val = i
+	28:<
+	28:IDENTIFIER, val = high
+	28:-
+	28:NUMBER, val=1
+	28:)
+	29:{
+	30:reserved word: int
+	30:IDENTIFIER, val = t
+	30:;
+	31:IDENTIFIER, val = k
+	31:=
+	31:IDENTIFIER, val = minloc
+	31:(
+	31:IDENTIFIER, val = a
+	31:,
+	31:IDENTIFIER, val = i
+	31:,
+	31:IDENTIFIER, val = high
+	31:)
+	31:;
+	32:IDENTIFIER, val = t
+	32:=
+	32:IDENTIFIER, val = a
+	32:[
+	32:IDENTIFIER, val = k
+	32:]
+	32:;
+	33:IDENTIFIER, val = a
+	33:[
+	33:IDENTIFIER, val = k
+	33:]
+	33:=
+	33:IDENTIFIER, val = a
+	33:[
+	33:IDENTIFIER, val = i
+	33:]
+	33:;
+	34:IDENTIFIER, val = a
+	34:[
+	34:IDENTIFIER, val = i
+	34:]
+	34:=
+	34:IDENTIFIER, val = t
+	34:;
+	35:IDENTIFIER, val = i
+	35:=
+	35:IDENTIFIER, val = i
+	35:+
+	35:NUMBER, val=1
+	35:;
+	36:}
+	37:}
+	39:reserved word: void
+	39:IDENTIFIER, val = main
+	39:(
+	39:reserved word: void
+	39:)
+	40:{
+	41:reserved word: int
+	41:IDENTIFIER, val = i
+	41:;
+	42:IDENTIFIER, val = i
+	42:=
+	42:NUMBER, val=0
+	42:;
+	43:reserved word: while
+	43:(
+	43:IDENTIFIER, val = i
+	43:<
+	43:NUMBER, val=10
+	43:)
+	44:{
+	45:IDENTIFIER, val = x
+	45:[
+	45:IDENTIFIER, val = i
+	45:]
+	45:=
+	45:IDENTIFIER, val = input
+	45:(
+	45:)
+	45:;
+	46:IDENTIFIER, val = i
+	46:=
+	46:IDENTIFIER, val = i
+	46:+
+	46:NUMBER, val=1
+	46:;
+	47:}
+	48:IDENTIFIER, val = sort
+	48:(
+	48:IDENTIFIER, val = x
+	48:,
+	48:NUMBER, val=0
+	48:,
+	48:NUMBER, val=10
+	48:)
+	48:;
+	49:IDENTIFIER, val = i
+	49:=
+	49:NUMBER, val=0
+	49:;
+	50:reserved word: while
+	50:(
+	50:IDENTIFIER, val = i
+	50:<
+	50:NUMBER, val=10
+	50:)
+	51:{
+	52:IDENTIFIER, val = output
+	52:(
+	52:IDENTIFIER, val = x
+	52:[
+	52:IDENTIFIER, val = i
+	52:]
+	52:)
+	52:;
+	53:IDENTIFIER, val = i
+	53:=
+	53:IDENTIFIER, val = i
+	53:+
+	53:NUMBER, val=1
+	53:;
+	54:}
+	55:}
+	55:EOF

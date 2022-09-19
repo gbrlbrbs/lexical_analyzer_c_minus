@@ -1,6 +1,7 @@
 
 %{
 #include "globals.h"
+#include "utils.h"
 #include "scan.h"
 char token_string[MAXTOKENLEN+1]; /*lexema identificador*/
 %}
@@ -50,7 +51,7 @@ whitespace  [ \t]+
         c = input();
         if (c == EOF) break;
         if (c == '\n') lineno++;
-    } while (c != '/' && previous != '*');
+    } while (c != '/' || previous != '*');
 }
 . {return ERROR;}
 %%

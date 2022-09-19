@@ -1,0 +1,73 @@
+
+C- COMPILATION: teste1.cminus
+	2:reserved word: int
+	2:IDENTIFIER, val = gcd
+	2:(
+	2:reserved word: int
+	2:IDENTIFIER, val = u
+	2:,
+	2:reserved word: int
+	2:IDENTIFIER, val = v
+	2:)
+	3:{
+	4:reserved word: if
+	4:(
+	4:IDENTIFIER, val = v
+	4:==
+	4:NUMBER, val=0
+	4:)
+	5:reserved word: return
+	5:IDENTIFIER, val = u
+	5:;
+	6:reserved word: else
+	7:reserved word: return
+	7:IDENTIFIER, val = gcd
+	7:(
+	7:IDENTIFIER, val = v
+	7:,
+	7:IDENTIFIER, val = u
+	7:-
+	7:IDENTIFIER, val = u
+	7:/
+	7:IDENTIFIER, val = v
+	7:*
+	7:IDENTIFIER, val = v
+	7:)
+	7:;
+	9:}
+	10:reserved word: void
+	10:IDENTIFIER, val = main
+	10:(
+	10:reserved word: void
+	10:)
+	11:{
+	12:reserved word: int
+	12:IDENTIFIER, val = x
+	12:;
+	13:reserved word: int
+	13:IDENTIFIER, val = y
+	13:;
+	14:IDENTIFIER, val = x
+	14:=
+	14:IDENTIFIER, val = input
+	14:(
+	14:)
+	14:;
+	15:IDENTIFIER, val = y
+	15:=
+	15:IDENTIFIER, val = input
+	15:(
+	15:)
+	15:;
+	16:IDENTIFIER, val = output
+	16:(
+	16:IDENTIFIER, val = gcd
+	16:(
+	16:IDENTIFIER, val = x
+	16:,
+	16:IDENTIFIER, val = y
+	16:)
+	16:)
+	16:;
+	17:}
+	17:EOF
