@@ -36,19 +36,21 @@ whitespace  [ \t]+
 ")"             {return RPAR;}
 "["             {return LBRACK;}
 "]"             {return RBRACK;}
-"/*"            {return LCOMM;}
-"*/"            {return RCOMM;}
+"{"             {return LCURLY;}
+"}"             {return RCURLY;}
 {number}        {return NUMBER;}
 {identifier}    {return IDENTIFIER;}
 {newline}       {lineno++;}
 {whitespace}    {} /* do nothing - skip whitespace */
-"{" {
-    char c;
+"/*" {
+    char c = ' ';
+    char previous;
     do {
+        previous = c;
         c = input();
         if (c == EOF) break;
         if (c == '\n') lineno++;
-    } while (c != '}');
+    } while (c != '/' && previous != '*');
 }
 . {return ERROR;}
 %%

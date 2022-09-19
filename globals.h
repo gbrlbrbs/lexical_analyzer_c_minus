@@ -26,8 +26,8 @@ typedef enum {
     /*multicnharacter tokens*/
     IDENTIFIER, NUMBER,
     /*special symbols*/
-    ASSIGN,  EQUALS, LOWER, LARGER, LOWER_EQ, LARGER_EQ, NOT_EQ, PLUS, MINUS, 
-    TIMES, DIV, SEMICOL, COLON, RPAR, LPAR, RBRACK, LBRACK, RCOMM, LCOMM
+    ASSIGN, EQUALS, LOWER, LARGER, LOWER_EQ, LARGER_EQ, NOT_EQ, PLUS, MINUS, 
+    TIMES, DIV, SEMICOL, COLON, RPAR, LPAR, RBRACK, LBRACK, RCURLY, LCURLY
 } TokenType;
 
 extern int lineno;      /* source line number for listing */
