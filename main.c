@@ -30,13 +30,13 @@ FILE * listing;
 FILE * code;
 
 /* allocate and set tracing flags */
-int EchoSource = TRUE;
-int TraceScan = TRUE;
-int TraceParse = FALSE;
-int TraceAnalyze = FALSE;
-int TraceCode = FALSE;
+int echo_source = TRUE;
+int trace_scan = TRUE;
+int trace_parse = FALSE;
+int trace_analyze = FALSE;
+int trace_code = FALSE;
 
-int Error = FALSE;
+int error = FALSE;
 
 int main( int argc, char * argv[] )
 { TreeNode * syntaxTree;
