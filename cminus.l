@@ -36,8 +36,8 @@ whitespace  [ \t]+
 ")"             {return RPAR;}
 "["             {return LBRACK;}
 "]"             {return RBRACK;}
-"/*"            {return LCOMM;}
-"*/"            {return RCOMM;}
+"{"             {return LCURLY;}
+"}"             {return RCURLY;}
 {number}        {return NUMBER;}
 {identifier}    {return IDENTIFIER;}
 {newline}       {lineno++;}
